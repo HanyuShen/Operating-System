@@ -26,7 +26,7 @@ class CyclicCache(Memory):
             del self.cache[0]
             self.cache.append(address)
         else:
-            self.cache.append(address)
+            self.cache.append(address)    
 
         return super().lookup(address)
 
