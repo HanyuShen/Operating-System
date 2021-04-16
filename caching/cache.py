@@ -20,7 +20,7 @@ class CyclicCache(Memory):
         for cache_address in self.cache:
             if address == cache_address:
                 self.hit_count -= 1
-                return super().lookup(address)
+                return super().lookup(address)    
     
         if len(self.cache) > 3:
             del self.cache[0]
